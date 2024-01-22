@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinder gerden school</title>
+    <!-- Daisy UI & Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato&family=Lexend+Deca:wght@300&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <!-- Tailwind custom class -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-primary': '#F3F25B',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- CSS Custom style -->
+    <style>
+        .font-inter{
+            font-family: 'Inter', sans-serif;
+        }
+        .font-source-serif{
+            font-family: 'Source Serif 4', serif;
+        }
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+        .font-lexend-deca{
+            font-family: 'Lexend Deca', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav section-->
+    <nav class="bg-yellow-50 font-inter lg:text-black">
+        <div class="w-full items-center">
+            <div class=" lg:bg-[#CBCDA9]">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost dark:text-black lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 items-center">
+                  <li class="font-medium"><a>Home</a></li>
+                  <li class="font-black"><a href="index.html">About us</a></li>
+                  <li class="font-medium"><a href="contact.html">Contact</a></li>
+                  <label class="swap swap-rotate">
+  
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" class="theme-controller" value="synthwave" />
+                    
+                    <!-- sun icon -->
+                    <svg class="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                    
+                    <!-- moon icon -->
+                    <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+                    
+                  </label>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex justify-center">
+              <ul class="menu menu-horizontal px-1">
+                <li class="font-medium"><a>Home</a></li>
+                <li class="font-medium"><a href="index.html">About us</a></li>
+                <li class="font-black"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <main class="container mx-auto max-w-[1440px] bg-yellow-50 px-5 py-20 lg:pt-[76px] lg:pb-[224px]" >
+       <section>
+        <h2 class="text-4xl md:text-6xl lg:text-8xl text-black font-bold font-source-serif text-center mt-">Contact Us</h2>
+        <p class="max-w-[663px] mx-auto text-center text-black text-2xl font-semibold font-lato mt-5 mb-20">
+            Get in touch! Have a question or feedback? Use our contact form or drop us an email. We're here to help!
+        </p>
+        <div class="flex flex-col justify-center items-center lg:flex-row mx-0 md:mx-40 lg:mx-60 lg:mx-72">
+            <!-- form section here -->
+            <div class="gap-3 gap-0 w-full lg:w-1/2 bg-stone-900 flex-1  lg:rounded-l-lg px-7 py-7 md:py-[73px]">
+                <h2 class="dark:text-white text-[32px] ">Get in touch with us</h2>
+                <form action="" class="font-lexend-deca">
+                  <!-- Name section -->
+                  <label for="name" class="block my-2 text-sm text-xs font-light text-stone-300">Name</label>
+                  <input type="name" id="name" aria-describedby="helper-text-explanation" class="text-white border border-neutral-400  text-sm rounded-sm block w-full p-2.5 bg-zinc-800" placeholder="Rachel Joe">
+                  <!-- Email section -->
+                  <label for="email" class="block my-2 text-sm text-xs font-light text-stone-300">Email</label>
+                  <input type="email" id="email" aria-describedby="helper-text-explanation" class=" text-white border border-neutral-400  text-sm rounded-sm block w-full p-2.5 bg-zinc-800" placeholder="Rachel@domain.com">
+                <!-- Message section -->
+                <label for="message" class="block my-2 text-sm text-xs font-light text-stone-300">Message</label>
+                <textarea id="message" rows="4" class="block text-white border border-neutral-400  text-sm rounded-sm block w-full p-2.5 bg-zinc-800" placeholder="Type your query here....."></textarea>
+                <button type="submit" class="text-stone-900 bg-btn-primary focus:ring-1 focus:outline-none focus:ring-neutral-400 font-medium rounded-sm text-sm px-5 py-2.5 mt-5 text-center">Register new account</button>
+
+                </form>       
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img class="w-full flex-1" src="images/map.png" alt="">
+            </div>
+        </div>
+       </section>
+    </main>
+</body>
+</html>
